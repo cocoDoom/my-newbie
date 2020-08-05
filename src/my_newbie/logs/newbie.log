@@ -1,0 +1,2 @@
+2020-08-03 14:17:11.936  INFO 11723 --- [           main] o.e.j.u.log          : Logging initialized @28886ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-08-03 23:56:03.150  INFO 56005 --- [           main] o.e.j.u.log          : Logging initialized @35014ms to org.eclipse.jetty.util.log.Slf4jLog
