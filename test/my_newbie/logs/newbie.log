@@ -115,3 +115,22 @@
 2020-08-05 18:24:15.060  INFO 89816 --- [           main] m.s.user-service     : orderid:  3  consume successfully, remains  1
 2020-08-05 18:24:15.064 ERROR 89816 --- [           main] m.s.user-service     : order not exist
 2020-08-05 18:24:15.067 ERROR 89816 --- [           main] m.s.user-service     : no more order
+2020-08-05 20:06:32.954  INFO 90590 --- [           main] o.m.d.cluster        : Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-08-05 20:06:33.028  INFO 90590 --- [127.0.0.1:27017] o.m.d.connection     : Opened connection [connectionId{localValue:1, serverValue:130}] to 127.0.0.1:27017
+2020-08-05 20:06:33.030  INFO 90590 --- [127.0.0.1:27017] o.m.d.cluster        : Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 8]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, roundTripTimeNanos=596174}
+2020-08-05 20:06:39.777  INFO 90590 --- [           main] o.e.j.u.log          : Logging initialized @34826ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-08-05 20:06:41.205  INFO 90590 --- [           main] o.m.d.connection     : Opened connection [connectionId{localValue:2, serverValue:131}] to 127.0.0.1:27017
+2020-08-05 20:06:41.494  INFO 90590 --- [           main] m.s.weixin-service   : access token response:  {:errcode 40029, :errmsg invalid code hints: [CJcDjHMre-nmRz_a!]}
+2020-08-05 20:06:41.494 ERROR 90590 --- [           main] m.s.weixin-service   : get access token failed:  40029
+2020-08-05 20:06:41.542  INFO 90590 --- [           main] m.s.user-service     : 9  register successfully
+2020-08-05 20:06:41.546 ERROR 90590 --- [           main] m.s.user-service     : password is too short
+2020-08-05 20:06:41.551 ERROR 90590 --- [           main] m.s.user-service     : this user is already registered
+2020-08-05 20:06:41.557  INFO 90590 --- [           main] m.s.user-service     : login successfully
+2020-08-05 20:06:41.560 ERROR 90590 --- [           main] m.s.user-service     : this user is not registered
+2020-08-05 20:06:41.565 ERROR 90590 --- [           main] m.s.user-service     : password not correct
+2020-08-05 20:06:41.571  INFO 90590 --- [           main] m.s.user-service     : orderid:  3  add successfully
+2020-08-05 20:06:41.575 ERROR 90590 --- [           main] m.s.user-service     : this order is already registered
+2020-08-05 20:06:41.579 ERROR 90590 --- [           main] m.s.user-service     : ordername is invalid
+2020-08-05 20:06:41.588  INFO 90590 --- [           main] m.s.user-service     : orderid:  3  consume successfully, remains  1
+2020-08-05 20:06:41.592 ERROR 90590 --- [           main] m.s.user-service     : order not exist
+2020-08-05 20:06:41.596 ERROR 90590 --- [           main] m.s.user-service     : no more order

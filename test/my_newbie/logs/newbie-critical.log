@@ -36,3 +36,12 @@
 2020-08-05 18:24:15.049 ERROR 89816 --- [           main] m.s.user-service     : ordername is invalid
 2020-08-05 18:24:15.064 ERROR 89816 --- [           main] m.s.user-service     : order not exist
 2020-08-05 18:24:15.067 ERROR 89816 --- [           main] m.s.user-service     : no more order
+2020-08-05 20:06:41.494 ERROR 90590 --- [           main] m.s.weixin-service   : get access token failed:  40029
+2020-08-05 20:06:41.546 ERROR 90590 --- [           main] m.s.user-service     : password is too short
+2020-08-05 20:06:41.551 ERROR 90590 --- [           main] m.s.user-service     : this user is already registered
+2020-08-05 20:06:41.560 ERROR 90590 --- [           main] m.s.user-service     : this user is not registered
+2020-08-05 20:06:41.565 ERROR 90590 --- [           main] m.s.user-service     : password not correct
+2020-08-05 20:06:41.575 ERROR 90590 --- [           main] m.s.user-service     : this order is already registered
+2020-08-05 20:06:41.579 ERROR 90590 --- [           main] m.s.user-service     : ordername is invalid
+2020-08-05 20:06:41.592 ERROR 90590 --- [           main] m.s.user-service     : order not exist
+2020-08-05 20:06:41.596 ERROR 90590 --- [           main] m.s.user-service     : no more order
