@@ -6,6 +6,7 @@
             [my-newbie.util.response-util :as res]
             [pandect.algo.sha1 :as sha]))
 
+;测试账号提供的，STATE随便填写
 (def APP_ID "wx9d8a3d7b745f7323")
 (def APP_SECRET "8057e593c3deb529e1eec299f392b9df")
 (def SCOPE "snsapi_userinfo")

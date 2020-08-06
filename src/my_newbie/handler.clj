@@ -50,8 +50,6 @@
 
       ;把链接复制到微信中，选择在微信打开
       ;weixin-auth-info将uri重新定向到上面的方法weixin-info，来获取用户信息
-      ;weixin-info中如果请求url是静默状态scope=snsapi_base，获取结果可能是errcode 48001
-      ;这是因为账号从未授权过，静默获取不到，所以先执行一次非静默获取scope=snsapi_userinfo，就可以了
       (GET "/weixin-auth-info" []
         :tags ["weixin"]
         :summary "需要在微信客户端中运行"
