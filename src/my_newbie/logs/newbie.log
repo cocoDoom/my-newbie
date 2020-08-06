@@ -1,2 +1,8 @@
-2020-08-03 14:17:11.936  INFO 11723 --- [           main] o.e.j.u.log          : Logging initialized @28886ms to org.eclipse.jetty.util.log.Slf4jLog
-2020-08-03 23:56:03.150  INFO 56005 --- [           main] o.e.j.u.log          : Logging initialized @35014ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-08-06 10:09:57.466  INFO 92059 --- [           main] o.e.j.u.log          : Logging initialized @28891ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-08-06 10:10:04.564  INFO 92059 --- [           main] o.m.d.cluster        : Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-08-06 10:10:04.644  INFO 92059 --- [127.0.0.1:27017] o.m.d.connection     : Opened connection [connectionId{localValue:1, serverValue:132}] to 127.0.0.1:27017
+2020-08-06 10:10:04.647  INFO 92059 --- [127.0.0.1:27017] o.m.d.cluster        : Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 8]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, roundTripTimeNanos=526898}
+2020-08-06 10:11:13.970  INFO 92068 --- [           main] o.e.j.u.log          : Logging initialized @28985ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-08-06 10:11:21.004  INFO 92068 --- [           main] o.m.d.cluster        : Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-08-06 10:11:21.071  INFO 92068 --- [127.0.0.1:27017] o.m.d.connection     : Opened connection [connectionId{localValue:1, serverValue:133}] to 127.0.0.1:27017
+2020-08-06 10:11:21.073  INFO 92068 --- [127.0.0.1:27017] o.m.d.cluster        : Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 8]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, roundTripTimeNanos=446559}

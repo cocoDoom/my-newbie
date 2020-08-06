@@ -41,10 +41,11 @@
       ;https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index
       ;测试号管理界面，设置URL(http://3b32m96722.wicp.vip/api/config-info?)后
       ;通过返回请求重的echostr，验证token，在这一步可以做校验，可以参照官网
+      ;微信这个接口需要443或者80接口
       (GET "/config-info" [& args]
         :tags ["weixin"]
         ;:return mys/tokenRes
-        :summary "微信回调接口"
+        :summary "微信token设置接口"
         (ok (weixin/config-token args)))
 
       ;把链接复制到微信中，选择在微信打开

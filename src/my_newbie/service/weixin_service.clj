@@ -3,7 +3,8 @@
             [clojure.tools.logging :as log]
             [cheshire.core :as cheshire]
             [ring.util.codec :as encoder]
-            [my-newbie.util.response-util :as res]))
+            [my-newbie.util.response-util :as res]
+            [pandect.algo.sha1 :as sha]))
 
 (def APP_ID "wx9d8a3d7b745f7323")
 (def APP_SECRET "8057e593c3deb529e1eec299f392b9df")
@@ -65,7 +66,7 @@
 (defn weixin-auth-info
   []
   (let [query-params {:appid         APP_ID
-                      :redirect_uri  (encoder/url-encode "http://81bbfe4a0bee.ngrok.io/api/weixin-info")
+                      :redirect_uri  (encoder/url-encode "http://fbf6c1d54ef7.ngrok.io/api/weixin-info")
                       :response_type "code"
                       :scope         SCOPE
                       :state         STATE}]
@@ -76,6 +77,13 @@
             (:scope query-params)
             (:state query-params))))
 
+
+(defn checkSignature [args]
+  (let [{:keys [timestamp nonce]} args]
+    (sha/sha1 (apply str (sort (vector timestamp nonce TOKEN))))
+    )
+  )
+
 (defn config-token [args]
   (let [echostr (:echostr args)]
     (log/info "\nsignature "
@@ -83,5 +91,7 @@
               (:echostr args) "\ntimestamp "
               (:timestamp args) "\nnonce "
               (:nonce args))
-    echostr)
+    (if (clojure.string/includes? (:signature args) (checkSignature args))
+      echostr (res/failResponse 40100 "invalid token"))
+    )
   )

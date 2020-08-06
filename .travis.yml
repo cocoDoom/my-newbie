@@ -1,5 +1,4 @@
 language: clojure
-sudo: required
 lein: lein
 dist: xenial
 before_script:

@@ -15,10 +15,12 @@
                  [ring/ring-defaults "0.3.2"]
                  [ring/ring-codec "1.1.2"]
                  [com.novemberain/monger "3.1.0"]
+                 [pandect "0.6.1"]
                  ]
   :plugins [[lein-ring "0.12.5"]
             [lein-cloverage "1.1.1"]]
   :ring {:handler my_newbie.handler/app}
+  ;制定主入口类，否则lein run local找不到主类（:main 主类的namespace）
   :main my-newbie.handler
   :profiles {
              :dev {:dependencies [[javax.servlet/javax.servlet-api "3.1.0"]
