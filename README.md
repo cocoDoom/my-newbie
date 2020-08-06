@@ -10,3 +10,10 @@
 3.点击最下方表格，网页服务 -> 网页账号 -> 网页授权获取用户基本信息 修改，填写ngrok生成的域名，例如fbf6c1d54ef7.ngrok.io
 
 4.打开https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html 按照教程来做就行，非静默授权获取code -> 携带code重定向到用户信息获取接口 -> 使用code获取access_token -> 使用access_token获得用户信息
+
+## Travis Ci使用注意事项
+travis ci 是一个持续集成的工具，且只支持github
+
+使用流程，代码上传至github，打开https://travis-ci.org ，点击右上角头像settings，打开下面要部署的项目的开关，然后点项目右侧的settings，设置Environment Variables的name，value，除了limit concurrent jobs，其他开关都打开，之后点开左上方的Dashboard
+
+push代码后会自动构建，在dashboard中可以查看日志
